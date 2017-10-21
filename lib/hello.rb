@@ -14,3 +14,10 @@ def hello_t(array)
 end
 
 # call your method here!
+arr = ["Tim", "Tom", "John"]
+
+hello_t(arr) do  |name|
+  puts name*3
+end
+
+hello_t(arr) { |name| puts name + "!!!!" }
